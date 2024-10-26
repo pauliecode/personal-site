@@ -1,0 +1,95 @@
+.app {
+    font-family: 'Dosis', sans-serif; 
+    color: var(--text-primary);
+}
+
+.section-container {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    max-width: 46%;
+    width: 46%;
+    height: auto;
+    border-radius: 30px;
+    padding: 1em 5em 2em 5em;
+    transition: all .2s ease-in-out;
+}
+
+.section-header {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.section-header::after {
+    content: "";
+    display: block;
+    width: 200px;
+    margin-top: 30px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--text-secondary);
+    opacity: 75%;
+}  
+
+p {
+    font-size: 22px;    
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--highlight);
+}
+
+@media only screen and (max-width: 1920px) {
+    .section-container {
+        max-width: 58%;
+        width: 58%;  
+        right: 2%; 
+    }
+
+    .section-container p {
+        font-size: 21px;    
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .section-container {
+        max-width: 64%;
+        width: 64%;
+        right: 0%;  
+    }
+
+    .section-container p {
+        font-size: 18px;    
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .section-container {
+        max-width: 65%;
+        width: 65%;
+        right: 0%;
+        top: 15%;
+    }
+
+    .section-container p {
+        font-size: 15px;    
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .section-container {
+        top: 75%;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+        padding: 1em 5em 2em 5em;
+        transition: all .2s ease-in-out;
+    }
+}

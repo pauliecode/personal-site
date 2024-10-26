@@ -1,0 +1,25 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+    align-items: center;
+}
+
+#footer p {
+    color: var(--hover);
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #footer {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #footer p {
+        font-size: 10px;
+    }
+}
